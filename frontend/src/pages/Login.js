@@ -13,7 +13,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
      e.preventDefault()
 
-    let url = 'http://localhost:5000/api/user/login'
+    let url = 'https://fullstack-food-tracker-back.vercel.app/api/user/login'
     const userData = { email, password }
 
     // sent data to mongDB 
