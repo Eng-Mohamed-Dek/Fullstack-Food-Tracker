@@ -19,13 +19,7 @@ app.use((req, res, next) => {
 
 // middleware for parsing JSON
 app.use(express.json())
-app.use(cors(
-  {
-    origin: ["https://fullstack-food-tracker-back.vercel.app"],
-    method: ["POST", "GET"],
-    credentials: true
-  }
-))
+app.use(cors())
 
 // Routes
 app.use("/api/foods", FoodRouters);
