@@ -14,7 +14,7 @@ const Signup = () => {
      e.preventDefault()
 
     const userData = { email, password }
-    let url = 'http://localhost:5000/api/user/signup'
+    let url = 'https://fullstack-food-tracker-back.vercel.app/api/user/signup'
 
     // sent data to mongDB 
     const response = await fetch(url, {
