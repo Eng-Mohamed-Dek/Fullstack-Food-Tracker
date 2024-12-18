@@ -35,7 +35,7 @@ mongoose
   .then(() => {
     console.log("Connected to database");
     // Listening Express
-    app.listen(5000 || 3000, () => {
+    app.listen("https://fullstack-food-tracker-back.vercel.app", () => {
       console.log(`App listening on port http://localhost:5000`);
     });
 })
