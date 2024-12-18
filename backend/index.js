@@ -21,7 +21,7 @@ app.use((req, res, next) => {
 app.use(express.json())
 app.use(cors(
   {
-    origin: [""],
+    origin: ["https://fullstack-food-tracker-back.vercel.app"],
     method: ["POST", "GET"],
     credentials: true
   }
